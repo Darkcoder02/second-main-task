@@ -4,8 +4,9 @@ import { gapi } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 import {GoogleLogin} from "react-google-login";
 const Login = () => {
-  const clientId =
-    "378154955519-leeh8thg8thtgqd488kdcpkkcqeqimcd.apps.googleusercontent.com";
+//   const clientId =
+//     "378154955519-leeh8thg8thtgqd488kdcpkkcqeqimcd.apps.googleusercontent.com";
+    const clientId = "913836679168-mkhj7svtq8f3vq5pv20t1jvcsn9ai35h.apps.googleusercontent.com";
   const navigate = useNavigate();
   useEffect(() => {
     function start() {
@@ -26,6 +27,9 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const loggedUser = JSON.parse(localStorage.getItem("user"));
+    if(loggedUser===null){
+      navigate('/signup')
+    }
     if (
       input.name === loggedUser.name &&
       input.password === loggedUser.password
