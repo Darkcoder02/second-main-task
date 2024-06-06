@@ -146,8 +146,8 @@ const Header = () => {
           </div>
         ) : (
           <div className="hidden md:inline-flex gap-2 items-center">
-            <button className="button"> Login </button>
-            <button className="button"> SignUp </button>
+            <button className="button" onClick={() => navigate('/login')}> Login </button>
+            <button className="button" onClick={() => navigate('/signup')}> SignUp </button>
           </div>
         )}
       </div>
