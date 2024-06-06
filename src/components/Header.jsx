@@ -8,8 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { GoogleLogout } from "react-google-login";
 
 const Header = () => {
-  const clientId =
-    "378154955519-leeh8thg8thtgqd488kdcpkkcqeqimcd.apps.googleusercontent.com";
+  // const clientId =
+  //   "378154955519-leeh8thg8thtgqd488kdcpkkcqeqimcd.apps.googleusercontent.com";
+  const clientId = "913836679168-mkhj7svtq8f3vq5pv20t1jvcsn9ai35h.apps.googleusercontent.com";
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("user"));
   const customStyles = {
@@ -96,8 +97,9 @@ const Header = () => {
                     </button>
                   </div>
                 )}
-                <button className="button mt-1">Analytics</button>
-                <button className="button mt-1">Companies</button>
+                <button className="button mt-1">Notification</button>
+                <button className="button mt-1">About</button>
+                <button className="button mt-1">Settings</button>
                 {localStorage.getItem("google-image") &&
                 localStorage.getItem("loggedIn") ? (
                   <GoogleLogout
@@ -134,7 +136,7 @@ const Header = () => {
                 />
               </div>
             ) : (
-              <div>
+              <div className="hidden md:inline-flex gap-2 items-center">
                 <button className="button" onClick={handleLogout}>
                   Logout
                 </button>
