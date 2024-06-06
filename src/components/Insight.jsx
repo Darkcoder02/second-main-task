@@ -65,7 +65,7 @@ const Insight = ({ insight }) => {
       {insight === "sentiments" && 
       <div className="mt-6 lg:gap-16 gap-4 grid grid-cols-1 md:grid-cols-2">
         {cardData.map((item)=>(
-            <Card headingtext={item.heading} basetext={item.base}/>
+            <Card headingtext={item.heading} basetext={item.base} value={item.value}/>
         ))}
         </div>}
     </div>
