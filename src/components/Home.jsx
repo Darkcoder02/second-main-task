@@ -6,12 +6,30 @@ import Competitor from "./Competitor";
 import Feed from "./Feed";
 import Insight from "./Insight";
 import Report from "./Report";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 
 import "react-datepicker/dist/react-datepicker.css";
 
 const Home = () => {
   const navigate = useNavigate();
+  const[topButton, setTopButton] = useState(false);
+  useEffect(()=>{
+    window.addEventListener("scroll",()=>{
+      if(window.scrollY > 200){
+        setTopButton(true)
+      } else{
+        setTopButton(false)
+      }
+    })
+  },[])
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    })
+  }
   const options = [
     { label: "Categories", value: "categories" },
 
@@ -81,7 +99,8 @@ const Home = () => {
 
   return (
     <div className="relative">
-      <div className=""><Header /></div>
+      <div><Header /></div>
+      <div>{topButton && <FaArrowAltCircleUp onClick={scrollUp} className="fixed z-50 bottom-5 right-5 text-2xl md:text-4xl md:bottom-10 md:right-10"/>}</div>
       <div className="mx-4 lg:max-w-7xl lg:mx-auto">
         <div className="sticky top-0 sm:top-1 z-50 grid grid-cols-2 md:grid-cols-4 gap-4 my-4 md:my-8 p-2 md:p-6 backdrop-blur-lg shadow-md rounded-lg">
           <Dropdown

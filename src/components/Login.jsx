@@ -27,10 +27,13 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const loggedUser = JSON.parse(localStorage.getItem("user"));
-    if(loggedUser===null){
+    if(loggedUser===null || loggedUser.name===null || loggedUser.password===null){
       navigate('/signup')
     }
-    if (
+    else if(input.name===null || input.password===null){
+      alert("Enter Username/Password");
+    }
+    else if (
       input.name === loggedUser.name &&
       input.password === loggedUser.password
     ) {

@@ -1,71 +1,71 @@
 const textData = [
     {
       "text": "Streamlined",
-      "value": "0098"
+      "value": 20098
     },
     {
       "text": "Configurable",
-      "value": 2165
+      "value": 20165
     },
     {
       "text": "benchmark",
-      "value": 265
+      "value": 19065
     },
     {
       "text": "discrete",
-      "value": 956
+      "value": 19056
     },
     {
       "text": "utilisation",
-      "value": 800
+      "value": 18000
     },
     {
       "text": "empowering",
-      "value": 6
+      "value": 60000
     },
     {
       "text": "help-desk",
-      "value": 9363
+      "value": 30630
     },
     {
       "text": "Open-source",
-      "value": 243
+      "value": 20043
     },
     {
       "text": "tangible",
-      "value": 496
+      "value": 18096
     },
     {
       "text": "Face to face",
-      "value": 0
+      "value": 19067
     },
     {
       "text": "Seamless",
-      "value": 6644
+      "value": 644
     },
     {
       "text": "Operative",
-      "value": 9
+      "value": 19000
     },
     {
       "text": "dedicated",
-      "value": 8997
+      "value": 18997
     },
     {
       "text": "interactive",
-      "value": "07941"
+      "value": 17941
     },
     {
       "text": "circuit",
-      "value": 4386
+      "value": 17386
     },
     {
       "text": "interactive",
-      "value": 8
+      "value": 17886
     },
     {
       "text": "bandwidth-monitored",
-      "value": 81341
+      "value": 51341
     },
     {
       "text": "object-oriented",
@@ -73,67 +73,67 @@ const textData = [
     },
     {
       "text": "systematic",
-      "value": 75270
+      "value": 55270
     },
     {
       "text": "Multi-layered",
-      "value": "081"
+      "value": 17081
     },
     {
       "text": "Front-line",
-      "value": 224
+      "value": 17024
     },
     {
       "text": "task-force",
-      "value": 466
+      "value": 17466
     },
     {
       "text": "Optional",
-      "value": 10262
+      "value": 19262
     },
     {
       "text": "hub",
-      "value": 780
+      "value": 18780
     },
     {
       "text": "transitional",
-      "value": "09"
+      "value": 19000
     },
     {
       "text": "encryption",
-      "value": 1481
+      "value": 21481
     },
     {
       "text": "approach",
-      "value": 0
+      "value": 17089
     },
     {
       "text": "Universal",
-      "value": 2
+      "value": 20000
     },
     {
       "text": "Reduced",
-      "value": 98484
+      "value": 20484
     },
     {
       "text": "Cross-group",
-      "value": 52
+      "value": 52000
     },
     {
       "text": "throughput",
-      "value": 456
+      "value": 17056
     },
     {
       "text": "local area network",
-      "value": 6532
+      "value": 17532
     },
     {
       "text": "value-added",
-      "value": 816
+      "value": 18106
     },
     {
       "text": "incremental",
-      "value": 7612
+      "value": 17612
     },
     {
       "text": "Focused",
@@ -141,27 +141,27 @@ const textData = [
     },
     {
       "text": "Vision-oriented",
-      "value": 703
+      "value": 17030
     },
     {
       "text": "alliance",
-      "value": 695
+      "value": 17695
     },
     {
       "text": "database",
-      "value": 79
+      "value": 17900
     },
     {
       "text": "middleware",
-      "value": 83
+      "value": 18300
     },
     {
       "text": "Total",
-      "value": 4016
+      "value": 17016
     },
     {
       "text": "task-force",
-      "value": 2972
+      "value": 20972
     },
     {
       "text": "bifurcated",
@@ -173,11 +173,11 @@ const textData = [
     },
     {
       "text": "challenge",
-      "value": 10305
+      "value": 20305
     },
     {
       "text": "Multi-lateral",
-      "value": 30
+      "value": 17890
     },
     {
       "text": "neural-net",
@@ -185,15 +185,15 @@ const textData = [
     },
     {
       "text": "data-warehouse",
-      "value": 95744
+      "value": 60744
     },
     {
       "text": "coherent",
-      "value": 358
+      "value": 17758
     },
     {
       "text": "Reactive",
-      "value": 6
+      "value": 20456
     },
     {
       "text": "attitude",
