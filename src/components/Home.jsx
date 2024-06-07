@@ -80,10 +80,10 @@ const Home = () => {
   }, [navigate]);
 
   return (
-    <div>
-      <Header />
+    <div className="relative">
+      <div className=""><Header /></div>
       <div className="mx-4 lg:max-w-7xl lg:mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-4 md:my-8 p-2 md:p-6 bg-black rounded-lg text-white">
+        <div className="sticky top-0 sm:top-1 z-50 grid grid-cols-2 md:grid-cols-4 gap-4 my-4 md:my-8 p-2 md:p-6 backdrop-blur-lg shadow-md rounded-lg">
           <Dropdown
             label="Feedback"
             options={options}

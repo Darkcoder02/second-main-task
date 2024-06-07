@@ -47,7 +47,7 @@ const Header = () => {
     handleLogout();
   };
   return (
-    <div className="grid grid-cols-3 p-2 justify-items-center sm:p-4 shadow-lg items-center">
+    <div className=" backdrop-blur-xl grid grid-cols-3 p-2 justify-items-center sm:p-4 shadow-lg items-center">
       {/* Logo */}
       <img
         src={logo}
