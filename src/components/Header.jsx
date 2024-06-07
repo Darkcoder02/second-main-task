@@ -6,6 +6,10 @@ import Modal from "react-modal";
 import { IoIosClose } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { GoogleLogout } from "react-google-login";
+import { MdOutlineNotificationsActive } from "react-icons/md";
+import { FcAbout } from "react-icons/fc";
+import { FiSettings } from "react-icons/fi";
+
 
 const Header = () => {
   // const clientId =
@@ -124,6 +128,9 @@ const Header = () => {
           <div>
             {localStorage.getItem("google-image") ? (
               <div className="hidden md:inline-flex gap-2 items-center">
+                <div className="mx-2"><MdOutlineNotificationsActive/></div>
+                <div className="mx-2"><FcAbout/></div>
+                <div className="mx-2"><FiSettings/></div>
                 <img
                   className="rounded-full h-9"
                   src={localStorage.getItem("google-image")}
@@ -137,10 +144,13 @@ const Header = () => {
               </div>
             ) : (
               <div className="hidden md:inline-flex gap-2 items-center">
+                <div className="mx-2"><MdOutlineNotificationsActive/></div>
+                <div className="mx-2"><FcAbout/></div>
+                <div className="mx-2"><FiSettings/></div>
                 <button className="button" onClick={handleLogout}>
                   Logout
                 </button>
-                <p className="button">{user.name}</p>
+                <p className="button whitespace-nowrap">{user.name}</p>
               </div>
             )}
           </div>

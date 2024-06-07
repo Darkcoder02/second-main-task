@@ -28,6 +28,7 @@ const Login = () => {
     e.preventDefault();
     const loggedUser = JSON.parse(localStorage.getItem("user"));
     if(loggedUser===null || loggedUser.name===null || loggedUser.password===null){
+      alert('Please Signup.')
       navigate('/signup')
     }
     else if(input.name===null || input.password===null){

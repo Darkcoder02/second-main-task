@@ -8,7 +8,7 @@ const Card = ({ headingtext, basetext, value }) => {
       <div className="flex flex-col gap-2 justify-center items-center">
         <p className="text-xl text-slate-600">{headingtext}</p>
         <p>{basetext}</p>
-        <div className="flex items-center bg-white p-1 rounded-md">
+        <div className="flex items-center bg-white p-1 gap-1 rounded-md mb-2">
           <FaStar />
           <p>reviews</p>
         </div>
