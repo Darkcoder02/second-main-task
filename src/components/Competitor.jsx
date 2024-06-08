@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import competitorData from "../data/competitorData";
+import { TbCircleNumber1Filled, TbCircleNumber2Filled, TbCircleNumber3Filled} from "react-icons/tb";
 
 const Competitor = () => {
   const breakPoint = [
@@ -23,18 +24,23 @@ const Competitor = () => {
       >
         {competitorData.map((item) => (
           <item>
-            <div
-              className="min-h-full flex items-center flex-col justify-center gap-4"
-              key={item.image}
-            >
-              <img
-                className="h-44 w-60 object-fill rounded-xl"
-                src={item.image}
-                alt=''
-              />
-              <p className="right-50 text-center text-slate-400 font-bold">
-                {item.name}
-              </p>
+            <div className="relative">
+              {item.id===1 && <TbCircleNumber1Filled  className="absolute text-4xl text-yellow-400  right-1 top-1"/>}
+              {item.id===2 && <TbCircleNumber2Filled  className="absolute text-4xl text-orange-400  right-1 top-1"/>}
+              {item.id===3 && <TbCircleNumber3Filled  className="absolute text-4xl text-rose-400  right-1 top-1"/>}
+              <div
+                className="min-h-full flex items-center flex-col justify-center gap-4"
+                key={item.image}
+              >
+                <img
+                  className="h-44 w-60 object-fill rounded-xl"
+                  src={item.image}
+                  alt=""
+                />
+                <p className="right-50 text-center text-slate-400 font-bold">
+                  {item.name}
+                </p>
+              </div>
             </div>
           </item>
         ))}

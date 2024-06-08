@@ -41,7 +41,7 @@ const textData = [
     },
     {
       "text": "Seamless",
-      "value": 644
+      "value": 1644
     },
     {
       "text": "Operative",

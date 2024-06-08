@@ -13,7 +13,9 @@ const Feed = () => {
 
   return (
     <div className="custom-container">
-      <h1 className="text-xl font-semibold text-slate-500 lg:text-4xl">Feeds</h1>
+      <h1 className="text-xl font-semibold text-slate-500 lg:text-4xl">
+        Feeds
+      </h1>
       <div className="flex flex-col items-center justify-center">
         <BarChart
           dataset={feedsData["feeds_categories"]}
@@ -27,6 +29,11 @@ const Feed = () => {
           layout="horizontal"
           {...chartSetting}
           bottomAxis={null}
+          // sx={
+          //   [`.${axisClasses.left} .${axisClasses.label}`]: {
+          //     transform: "translate(-20px, 0)",
+          //   }
+          // }
         />
         <p className="text-center text-slate-600 font-semibold">
           {feedsData["percent-feeds"]}%

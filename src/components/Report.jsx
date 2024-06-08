@@ -21,12 +21,14 @@ const Report = () => {
       <h1 className="text-xl font-semibold text-slate-500 lg:text-4xl">Report</h1>
       <BarChart
         dataset={reportData}
-        xAxis={[{ scaleType: "band", dataKey: "month" }]}
+        xAxis={[{ scaleType: "band", dataKey: "month",label:"categories"}]}
         series={[
           { dataKey: "Grocery", label: "Grocery" },
           { dataKey: "Electronics", label: "Electronics" },
           { dataKey: "Fashion", label: "Fashion" },
         ]}
+        yAxis={[{ scaleType:"continues",label:"Avg Sales" }]}
+        margin={{left: 59}}
         {...chartSetting}
       />
     </div>

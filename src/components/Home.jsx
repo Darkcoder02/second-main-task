@@ -77,7 +77,7 @@ const Home = () => {
   const Dropdown = ({ label, value, options, onChange, icon }) => {
     return (
       <label className="flex flex-col flex-grow items-center gap-2">
-        {label}
+<div className="text-white font-semibold">{label}</div>
         <select
           className="w-full border-2 text-black rounded-lg text-center hover:border-[#40e0d0] outline-none"
           value={value}
@@ -102,7 +102,7 @@ const Home = () => {
       <div><Header /></div>
       <div>{topButton && <FaArrowAltCircleUp onClick={scrollUp} className="fixed z-50 bottom-5 right-5 text-2xl md:text-4xl md:bottom-10 md:right-10"/>}</div>
       <div className="mx-4 lg:max-w-7xl lg:mx-auto">
-        <div className="sticky top-0 sm:top-1 z-50 grid grid-cols-2 md:grid-cols-4 gap-4 my-4 md:my-8 p-2 md:p-6 backdrop-blur-lg shadow-md rounded-lg">
+        <div className="sticky top-1 z-50 grid grid-cols-2 md:grid-cols-4 gap-4 my-4 md:my-8 p-2 md:p-6 backdrop-blur-lg shadow-md rounded-lg bg-slate-900 bg-opacity-50">
           <Dropdown
             label="Feedback"
             options={options}
